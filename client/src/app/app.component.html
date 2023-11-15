@@ -1,0 +1,10 @@
+<app-navbar></app-navbar> <!-- Navigation Bar -->
+
+<!-- Router Outlet will display components based on the route -->
+<router-outlet></router-outlet>
+<button class="theme-toggle" (click)="toggleTheme()">
+  <img *ngIf="theme === 'light-theme'" src="https://raw.githubusercontent.com/talohana/angular-dark-mode/master/src/assets/moon.svg" alt="Dark Mode">
+  <img *ngIf="theme === 'dark-theme'" src="https://raw.githubusercontent.com/talohana/angular-dark-mode/master/src/assets/sun.svg" alt="Light Mode">
+</button>
+<app-footer></app-footer> <!-- Footer -->
+
